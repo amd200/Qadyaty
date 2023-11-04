@@ -1,0 +1,27 @@
+.btn-bg {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: #fff ;
+  transition: 0.3s;
+}
+.btn-bg.green {
+  background: var(--green-500);
+}
+
+.btn-bg.green:hover {
+  background-color: transparent;
+  border: 1px solid var(--green-500);
+  color: var(--green-500);
+}
+
+.btn-bg.black {
+  background: var(--black-500);
+}
+.btn-bg.black:hover {
+  background-color: transparent;
+  border: 1px solid var(--black-500);
+  color: var(--black-500);
+}

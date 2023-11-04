@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+* {
+  text-decoration: none !important;
+  font-family: "Tajawal", sans-serif;
+}
+
+:root {
+  --green-500: #529d34;
+  --gray-500: #718295;
+  --black-500: #333;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html {
+  scroll-behavior: smooth;
+}

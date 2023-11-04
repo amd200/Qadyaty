@@ -1,0 +1,12 @@
+{
+    "data": [
+        {
+            "barcode_number": 1,
+            "boycott": true
+        },
+        {
+            "barcode_number": 1,
+            "boycott": true
+        }
+    ]
+}

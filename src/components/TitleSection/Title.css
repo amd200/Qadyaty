@@ -1,0 +1,18 @@
+.title-section {
+  text-align: center;
+  width: 350px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+.title-section h3 {
+  color: var(--black-500);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+.title-section p {
+  color: var(--gray-500);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}

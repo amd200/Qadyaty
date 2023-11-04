@@ -1,0 +1,67 @@
+.team img {
+  position: relative;
+  height: 308px;
+  border-radius: 30px;
+}
+.img-person {
+  position: relative;
+  overflow: hidden;
+}
+.team .img-person::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3)
+  );
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: skew(-25deg);
+  -webkit-transform: skew(-25deg);
+  -moz-transform: skew(-25deg);
+  -ms-transform: skew(-25deg);
+  -o-transform: skew(-25deg);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.team .img-person:hover::after {
+  width: 130%;
+}
+.team .details {
+  margin-top: 10px;
+  text-align: center;
+}
+.team .details h6 {
+  color: var(--black-500);
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.team .details p {
+  color: var(--gray-500);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.team .details ul.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.team .details ul.social-media-icons li:not(:last-child) {
+  margin-right: 15px;
+}
+.team .details ul.social-media-icons li a svg {
+  color: var(--gray-500);
+  font-size: 18px;
+}
