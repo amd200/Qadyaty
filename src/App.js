@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.rtl.min.css";
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./components/Landing/Landing";
@@ -8,20 +7,21 @@ import Supporters from "./components/Supporters/Supporters";
 import Telegram from "./components/Telegram/Telegram";
 import Team from "./components/Team/Team";
 import Footer from "./components/Footer/Footer";
-import "./hamburgers.min.css"
+import "./hamburgers.min.css";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
       <Landing />
       <Notes />
       <Supporters />
-      <Team  />
-      <Telegram  />
-      <Footer  />
-    </Router>
+      <Team />
+      <Telegram />
+      <Footer />
+    </BrowserRouter>
   );
 }
 

@@ -1,16 +1,16 @@
 import React from "react";
 import Title from "../TitleSection/Title";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useImage } from "react-image";
+// import { useImage } from "react-image";
 import "swiper/css";
 import "./Supporters.css";
 function Supporters() {
-  const { src: partnerSrc, isLoading: partnerLoading } = useImage({
-    srcList: "imgs/partner.png",
-  });
-  const { src: partner2Src, isLoading: partner2Loading } = useImage({
-    srcList: "imgs/partner2.png",
-  });
+  // const { src: partnerSrc, isLoading: partnerLoading } = useImage({
+  //   srcList: "imgs/partner.png",
+  // });
+  // const { src: partner2Src, isLoading: partner2Loading } = useImage({
+  //   srcList: "imgs/partner2.png",
+  // });
   const breakpoints = {
     768: {
       slidesPerView: 2,
@@ -34,10 +34,10 @@ function Supporters() {
             loop={true}
           >
             <SwiperSlide>
-             {!partnerLoading && <img src={partnerSrc} />}
+              <img src="imgs/partner.png" />
             </SwiperSlide>
             <SwiperSlide>
-            {!partner2Loading && <img src={partner2Src} />}
+              <img src="imgs/partner2.png" />
             </SwiperSlide>
             {/* <SwiperSlide><img src="imgs/partner2.png"/></SwiperSlide> */}
           </Swiper>

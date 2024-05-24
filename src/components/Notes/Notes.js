@@ -32,6 +32,7 @@ function Notes() {
   return (
     <div className="notes py-5" id="notes">
       <Title title= "تعليمات الاستخدام"  isVisible={true} />
+      <div className="container-fluid">
       <Swiper
       className="py-3"
       loop={true}
@@ -75,6 +76,7 @@ function Notes() {
           </p>
         </SwiperSlide>
       </Swiper>
+      </div>
     </div>
   );
 }
